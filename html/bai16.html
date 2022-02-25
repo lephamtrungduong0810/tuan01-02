@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai16.html</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            line-height: 20px;
+        }
+        .wrapper{
+            width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border: 1px solid rgb(104, 101, 101);
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgb(119 118 118);
+        }
+        span{
+            margin-left: 5px;
+        }
+        h1,h3{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="traval">
+            <h1>Travel reservation form</h1>
+            <h3>* denotes mandotory</h3>
+            <table>
+                <label for="txtname">Full name*:</label><br>
+                <input type="text" placeholder="FirstName LastName" id="txtname"><br>
+                <label for="txtmail">Email address*:</label><br>
+                <input type="text" placeholder="EMAIL_ADDRESS" id="txtmail"><br>
+                <label for="txtname">Select Tour Package*:</label><br>
+                <select name="select" id="select_tour">
+                    <option value="1">Goa</option>
+                    <option value="2">Goa 1</option>
+                    <option value="3">Goa 2</option>
+                </select><br>
+                <label for="txtname"> Arrival date*:</label><br>
+                <input type="date"  id="Arrival date"><br>
+                <label for="txtname"> Number of persons*:</label><br>
+                <input type="number"  id="number" placeholder="UNKNOWN_TYPE"><br>
+                <p>What would you want to avail?*</p>
+                <p>Boarding <input type="checkbox"></p>
+                <p>Fooding <input type="checkbox"></p>
+                <p>Sight seeing <input type="checkbox"></p>
+                <label for="txtdiscout">Discout Coupon code:</label><br>
+                <input type="text"  id="txtdiscout" placeholder="UNKNOWN_TYPE"><br>
+                <p>Terms and conditions*</p>
+                <span><input type="radio" name="radio"> I agree</span>
+                <span><input type="radio" name="radio"> I disagree</span> <br>
+                <button>Complete reservation</button>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

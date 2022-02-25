@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai14.html</title>
+    <style>
+        #wrapper{
+            width: 800px;
+            height: auto;
+            margin: 50px auto;
+            border: 1px solid rgb(104, 101, 101);
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgb(119 118 118);
+        } label{
+            margin-bottom: 10px;
+            
+        }
+       
+        label > input{
+
+           margin-left: 83px;
+           margin-bottom: 10px;
+        }
+        label > textarea{
+            margin-left: 102px;
+        }
+        span > input{
+            margin-left: 88px;
+            margin-top: 10px;
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Contact Us</h1>
+        <p>use the following form to send a message to Example Cafe</p>
+        <label>Your Email
+            <input type="text">
+        </label>
+         <br>
+        <label> Message 
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+        </label>
+         <br>
+        <label>How did you hear of us?</label>
+        <select name="select" id="select_option">
+            <option value="1">Google</option>
+            <option value="2">Mail</option>
+            <option value="3">Youtube</option>
+        </select>
+        <br>
+        <span>Newsletter
+        <input type="checkbox"> Ensure this box is checked if you would like to receive email updates</span> <br>
+        <button>Sen message</button>
+    </div>
+</body>
+</html>

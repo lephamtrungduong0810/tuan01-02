@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai17.html</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; 
+        }
+        .wrapper{
+            width: 800px;
+            height: auto;
+            margin: 20px auto;
+            border: 1px solid rgb(104, 101, 101);
+            padding: 40px;
+            box-shadow: 5px 5px 15px rgb(119 118 118);
+            background-color: rgb(250, 198, 119);
+        }
+        .wrapper h1{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .wrapper p{
+            margin-bottom: 15px;
+        }
+        input, textarea{
+            margin-bottom: 15px;
+        }
+        
+        #but {
+            display: flex;
+            justify-content: center;
+        }input{
+            margin-left:15px ;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Survey Form</h1>
+        <p>If you are interested in purchasing one or more of our products,
+            before ordering please complete some or all of the following survey for our marketing department.
+            Answering any question is optional, and all information will be kept strictly confidential.
+            Thank you very much for your time!
+        </p>
+        <form action="survey Form">
+           <ol>
+                <li><label for="txtname">What is your name?</label><br></li>
+                <input type="text" id="txtname" name="name" size="50"><br>
+
+                <li><label for="date">What is your date of birth?</label><br></li>
+                <input type="date" id="date" name="date"> <br>
+
+                <li><label for="txt3">What if your mailing address (if you would like to have a hard copy of our catalog sent to you)?</label><br></li>
+                <textarea name="mailing address" id="txt3" cols="40" rows="5"></textarea> <br>
+            
+                <li> <label for="txtemial">What is your email address?</label><br></li>
+                <input type="text" id="txtemail" name="email" size="40"><br>
+            
+                <li><p>Have you viewed our online product catalog?</p></li>
+                <span><input type="radio" name="radio1"> Yes</span>
+                <span><input type="radio" name="radio1"> No</span> <br>
+
+                <li><label for="checkbox">If so, what product(s), besides the one you are ordering, might you be interested in purchasing
+                in the future? (check all that apply.)
+                </label> <br></li>
+                <p><input type="checkbox"> VCR</p>
+                <p><input type="checkbox"> Big Screen TV</p>
+                <p><input type="checkbox"> Audio Equipment</p>
+                <p><input type="checkbox"> Video Equipment</p>
+                <p><input type="checkbox"> Camera Equipment</p>
+                <p><input type="checkbox"> other <input type="text" placeholder="Please List: " size="40"></p>
+           
+                <li> <label for="txt7">Do you have any questions, comments or suggestions before proceeding to the Order Form?</label><br></li>
+                <textarea name="txt7" id="txt7" cols="30" rows="5" placeholder="Your Input:"></textarea> <br>
+                <div id="but">
+                    <input type="submit" value="Send Form" >
+                    <input type="reset" value="Clear Form" >
+                </div>
+           </ol>
+        </form>    
+    </div>
+</body>
+</html>
